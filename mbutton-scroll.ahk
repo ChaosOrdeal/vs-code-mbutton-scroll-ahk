@@ -1,16 +1,4 @@
 #IfWinActive ahk_exe Code.exe ; script is only active in VS Code
-  ; LButton::
-  ;   if scroll {
-  ;     scroll := false ; cancel scroll
-  ;     ToolTip ; cancel tooltip
-  ;     hasScrollingStarted := false
-  ;   } else if !GetKeyState("Lwin", "P") {    ;this ALWAYS triggers, so not so useful, this is nested wrong, I suspect
-  ;     send {LButton Down}
-  ;     return
-  ;   } else {
-  ;     send {lbutton}
-  ;     return
-  ;   }
 	MButton:: ; on middle mouse button click, do the following
 		; check if the cursor is in a text area
 		; if no, send a regular middle click
